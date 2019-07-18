@@ -1,1 +1,21 @@
 // Navigation Styles here
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 2rem;
+    @media @mobile {
+        flex-direction: column;
+    }
+    a {
+        text-decoration: none;
+        margin: 0 2rem;
+        color: @shark;
+        font-size: 1.6rem;
+        @media @mobile {
+            margin: 1rem 2rem;
+        }
+    }
+}
