@@ -169,15 +169,19 @@ img {
   margin: 0 auto;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 2rem;
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 2rem;
 }
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
 @media (max-width: 500px) {
-  header {
+  header .nav {
     flex-direction: column;
   }
 }
@@ -269,6 +273,7 @@ header a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  width: 100%;
 }
 .home .inverse-content {
   padding-bottom: 30px;
