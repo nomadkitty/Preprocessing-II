@@ -1,0 +1,32 @@
+.input {
+    border-radius: 5px;
+    background-color: @silver;
+    padding: 20px;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    width: 90%;
+
+    input[type=text], select, textarea, [type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid @silver;
+        border-radius: 4px;
+        font-size: 1.6rem;
+       }
+
+    
+    input[type=submit] {
+        .buttons(@button-bg, 0.5em, 30%, @white);
+
+        &:hover {
+            background-color: @white;
+            color: @eastern-blue;
+        }
+    }
+}
+
+
+  
+  
